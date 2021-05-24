@@ -1,0 +1,135 @@
+/* ! *************************** */
+/* *********** general ********** */
+/* ! *************************** */
+
+html,
+body {
+   height: 100vh;
+   width: 100vw;
+}
+body {
+   background-color: aqua;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   /* margin: 0; */
+}
+
+/* ! *************************** */
+/* ********* contenedor ******** */
+/* ! *************************** */
+
+main {
+   background-color: white;
+   height: 80%;
+   width: 75%;
+   display: flex;
+
+   flex-wrap: wrap;
+}
+
+/* ! *************************** */
+/* ******* fila superior ****** */
+/* ! *************************** */
+
+.contaimer-top,
+.contaimer-buttom {
+   width: 100%;
+   border: 2px solid black;
+   box-sizing: border-box;
+}
+.contaimer-top {
+   display: flex;
+}
+.left,
+.right {
+   width: 50%;
+   height: 100%;
+}
+
+.left {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   background-color: red;
+}
+
+.left > div {
+   padding-top: 4rem;
+   display: block;
+   height: 60%;
+   background-color: yellow;
+}
+.left p {
+   height: 40%;
+}
+
+.right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.reviews {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+   border: 1px solid black;
+}
+.starts {
+   width: 40%;
+}
+.fa-star {
+   color: yellow;
+}
+
+/* ! *************************** */
+/* ******* fila inferior ****** */
+/* ! *************************** */
+
+.contaimer-buttom {
+   display: flex;
+   justify-content: space-between;
+   margin: 2rem;
+}
+.card {
+   background-color: aquamarine;
+   width: 30%;
+   height: 70%;
+}
+
+.card-1 {
+   align-self: flex-start;
+}
+.card-2 {
+   align-self: center;
+}
+.card-3 {
+   align-self: flex-end;
+}
+
+.card-header {
+   height: 35%;
+   width: 100%;
+   background-color: bisque;
+}
+
+/* ! *************************** */
+/* ********* pie de pagina ******** */
+/* ! *************************** */
+
+/* creditos */
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}

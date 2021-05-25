@@ -16,7 +16,7 @@ body {
 *,
 *::after,
 *::before {
-   box-sizing: border-box;
+   box-sizing: content-box;
    /* margin: 0; */
 }
 
@@ -41,7 +41,6 @@ main {
 .contaimer-buttom {
    width: 100%;
    border: 2px solid black;
-   box-sizing: border-box;
 }
 .contaimer-top {
    display: flex;
@@ -55,7 +54,6 @@ main {
 .left {
    display: flex;
    flex-direction: column;
-   box-sizing: border-box;
    background-color: red;
 }
 

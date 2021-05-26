@@ -25,101 +25,150 @@ body {
    width: 100vw;
 }
 body {
-   background-color: aqua;
    display: flex;
    justify-content: center;
    align-items: center;
+   background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+   background-size: contain, contain;
+   background-position-x: -40rem, right;
 }
 *,
 *::after,
 *::before {
    box-sizing: border-box;
-   /* margin: 0; */
 }
 
 /* ! *************************** */
 /* ********* contenedor ******** */
 /* ! *************************** */
-
 main {
-   background-color: white;
+   width: 80%;
    height: 80%;
-   width: 75%;
    display: flex;
-
    flex-wrap: wrap;
 }
 
-/* ! *************************** */
-/* ******* fila superior ****** */
-/* ! *************************** */
-
-.contaimer-top,
-.contaimer-buttom {
+.box {
+   height: 50%;
    width: 100%;
-   border: 2px solid black;
-   box-sizing: border-box;
 }
+
+/* ! *************************** */
+/* ********* box-top ******** */
+/* ! *************************** */
 .contaimer-top {
    display: flex;
 }
+
 .left,
 .right {
    width: 50%;
+}
+
+.left-text {
    height: 100%;
+   width: 80%;
 }
-
-.left {
-   display: flex;
-   flex-direction: column;
-   box-sizing: border-box;
-   background-color: red;
-}
-
-.left > div {
-   padding-top: 4rem;
-   display: block;
+.left-text > div {
    height: 60%;
-   background-color: yellow;
 }
-.left p {
-   height: 40%;
+.left-text h1 {
+   margin: 0.5rem 0;
+   color: var(--Very-Dark-Magenta);
+   /* font-size: 3rem; */
+   font-size: 3vw;
+   font-weight: 700;
+}
+
+.left-text p {
+   margin-top: 0;
+   color: var(--Dark-Grayish-Magenta);
+   font-weight: 500;
 }
 
 .right {
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
+   justify-content: center;
 }
 
 .reviews {
+   width: 70%;
+   margin: 1rem 0;
    display: flex;
    align-items: center;
-   justify-content: center;
-   width: 70%;
-   border: 1px solid black;
+   border-radius: 0.5rem;
+   background-color: var(--Light-Grayish-Magenta);
+   padding: 0.2rem 0;
 }
+
+.reviews p {
+   margin-left: 1rem;
+   color: var(--Very-Dark-Magenta);
+   font-weight: 700;
+}
+
+.review-1 {
+   align-self: flex-start;
+}
+.review-2 {
+   align-self: center;
+}
+.review-3 {
+   align-self: flex-end;
+}
+
 .starts {
+   padding: 0 1rem;
    width: 40%;
-}
-.fa-star {
-   color: yellow;
+   display: flex;
+   justify-content: space-around;
+   color: #ef9546;
 }
 
 /* ! *************************** */
-/* ******* fila inferior ****** */
+/* ********* box-bottom ******** */
 /* ! *************************** */
-
-.contaimer-buttom {
+.contaimer-bottom {
    display: flex;
    justify-content: space-between;
-   margin: 2rem;
 }
+
 .card {
-   background-color: aquamarine;
+   height: 90%;
    width: 30%;
-   height: 70%;
+   background-color: var(--Very-Dark-Magenta);
+   color: var(--White);
+   border-radius: 10px;
+   padding: 2rem;
+}
+.card-header {
+   height: 30%;
+   width: 100%;
+   margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+}
+.card-header p {
+   margin: 0.3rem 0;
+   font-weight: 500;
+}
+.card-header p:nth-child(2) {
+   color: var(--Soft-Pink);
+}
+.image {
+   height: 59px;
+   width: 59px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 1rem;
+}
+.image img {
+   max-width: 100%;
+}
+.card-body {
+   padding-top: 1rem;
 }
 
 .card-1 {
@@ -130,23 +179,4 @@ main {
 }
 .card-3 {
    align-self: flex-end;
-}
-
-.card-header {
-   height: 35%;
-   width: 100%;
-   background-color: bisque;
-}
-
-/* ! *************************** */
-/* ********* pie de pagina ******** */
-/* ! *************************** */
-
-/* creditos */
-.attribution {
-   font-size: 11px;
-   text-align: center;
-}
-.attribution a {
-   color: hsl(228, 45%, 44%);
 }

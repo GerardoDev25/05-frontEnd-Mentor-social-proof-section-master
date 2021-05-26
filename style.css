@@ -186,15 +186,15 @@ main {
 /* *********** mobile ********** */
 /* ! *************************** */
 @media screen and (max-width: 1000px) {
+   html,
    body {
-      height: 140vh;
+      height: 170vh;
       justify-content: center;
       overflow-x: hidden;
       background-image: url("./images/bg-pattern-top-mobile.svg"),
-      url("./images/bg-pattern-bottom-mobile.svg");
-   background-size: contain, contain;
-   background-position-x: top center, bottom center;
-
+         url("./images/bg-pattern-bottom-mobile.svg");
+      background-size: contain, contain;
+      background-position-x: top center, bottom center;
    }
    main {
       height: 90%;
@@ -236,15 +236,15 @@ main {
    }
 
    .reviews {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       max-height: 18%;
       flex-direction: column;
       align-self: center;
    }
    .reviews p {
       margin: 0.02rem 0;
-      font-size: .9rem;
-      padding: .2rem;
+      font-size: 0.9rem;
+      padding: 0.2rem;
       /* font-weight: 400; */
    }
 
@@ -271,7 +271,7 @@ main {
       align-self: center;
       margin-bottom: 1rem;
    }
-   .card-body{
-   font-size: .9rem;
+   .card-body {
+      font-size: 0.9rem;
    }
 }

@@ -169,6 +169,7 @@ main {
 }
 .card-body {
    padding-top: 1rem;
+   color: var(--White);
 }
 
 .card-1 {
@@ -179,4 +180,98 @@ main {
 }
 .card-3 {
    align-self: flex-end;
+}
+
+/* ! *************************** */
+/* *********** mobile ********** */
+/* ! *************************** */
+@media screen and (max-width: 1000px) {
+   body {
+      height: 140vh;
+      justify-content: center;
+      overflow-x: hidden;
+      background-image: url("./images/bg-pattern-top-mobile.svg"),
+      url("./images/bg-pattern-bottom-mobile.svg");
+   background-size: contain, contain;
+   background-position-x: top center, bottom center;
+
+   }
+   main {
+      height: 90%;
+      width: 90%;
+      min-width: 365px;
+      box-sizing: border-box;
+      margin-bottom: 4rem;
+   }
+   .box {
+      flex-direction: column;
+      width: 100%;
+      /* border: 2px solid black; */
+   }
+   .contaimer-top {
+      margin-top: 2rem;
+      height: 40%;
+      justify-content: space-around;
+      padding-bottom: 2rem;
+   }
+   .left {
+      width: 100%;
+   }
+   .right {
+      width: 100%;
+   }
+
+   .left-text {
+      text-align: center;
+      width: 100%;
+   }
+   .left-text div {
+      margin-bottom: 1rem;
+   }
+   .left-text h1 {
+      font-size: 3rem;
+   }
+   .left-text p {
+      font-size: 1rem;
+   }
+
+   .reviews {
+      margin-top: .5rem;
+      max-height: 18%;
+      flex-direction: column;
+      align-self: center;
+   }
+   .reviews p {
+      margin: 0.02rem 0;
+      font-size: .9rem;
+      padding: .2rem;
+      /* font-weight: 400; */
+   }
+
+   .starts {
+      justify-content: center;
+      padding: 2px 0;
+   }
+   .fas {
+      padding: auto 0.01rem;
+   }
+
+   .contaimer-bottom {
+      justify-content: center;
+      margin-top: 2rem;
+      align-items: center;
+      flex-direction: column;
+      height: 60%;
+   }
+   .card {
+      height: 30%;
+      max-width: 40rem;
+      /* display: none; */
+      width: 100%;
+      align-self: center;
+      margin-bottom: 1rem;
+   }
+   .card-body{
+   font-size: .9rem;
+   }
 }

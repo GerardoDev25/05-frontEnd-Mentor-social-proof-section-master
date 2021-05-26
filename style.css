@@ -1,0 +1,182 @@
+/* ! *************************** */
+/* *********** general ********** */
+/* ! *************************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+   font-size: 15px;
+   font-family: "Spartan", sans-serif;
+
+   /* ? ### Primary */
+
+   --Very-Dark-Magenta: hsl(300, 43%, 22%);
+   --Soft-Pink: hsl(333, 80%, 67%);
+
+   /* ? ### Neutral */
+
+   --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+   --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+   --White: hsl(0, 0%, 100%);
+}
+html,
+body {
+   height: 100vh;
+   width: 100vw;
+}
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+   background-size: contain, contain;
+   background-position-x: -40rem, right;
+}
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+/* ! *************************** */
+/* ********* contenedor ******** */
+/* ! *************************** */
+main {
+   width: 80%;
+   height: 80%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box {
+   height: 50%;
+   width: 100%;
+}
+
+/* ! *************************** */
+/* ********* box-top ******** */
+/* ! *************************** */
+.contaimer-top {
+   display: flex;
+}
+
+.left,
+.right {
+   width: 50%;
+}
+
+.left-text {
+   height: 100%;
+   width: 80%;
+}
+.left-text > div {
+   height: 60%;
+}
+.left-text h1 {
+   margin: 0.5rem 0;
+   color: var(--Very-Dark-Magenta);
+   /* font-size: 3rem; */
+   font-size: 3vw;
+   font-weight: 700;
+}
+
+.left-text p {
+   margin-top: 0;
+   color: var(--Dark-Grayish-Magenta);
+   font-weight: 500;
+}
+
+.right {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.reviews {
+   width: 70%;
+   margin: 1rem 0;
+   display: flex;
+   align-items: center;
+   border-radius: 0.5rem;
+   background-color: var(--Light-Grayish-Magenta);
+   padding: 0.2rem 0;
+}
+
+.reviews p {
+   margin-left: 1rem;
+   color: var(--Very-Dark-Magenta);
+   font-weight: 700;
+}
+
+.review-1 {
+   align-self: flex-start;
+}
+.review-2 {
+   align-self: center;
+}
+.review-3 {
+   align-self: flex-end;
+}
+
+.starts {
+   padding: 0 1rem;
+   width: 40%;
+   display: flex;
+   justify-content: space-around;
+   color: #ef9546;
+}
+
+/* ! *************************** */
+/* ********* box-bottom ******** */
+/* ! *************************** */
+.contaimer-bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card {
+   height: 90%;
+   width: 30%;
+   background-color: var(--Very-Dark-Magenta);
+   color: var(--White);
+   border-radius: 10px;
+   padding: 2rem;
+}
+.card-header {
+   height: 30%;
+   width: 100%;
+   margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+}
+.card-header p {
+   margin: 0.3rem 0;
+   font-weight: 500;
+}
+.card-header p:nth-child(2) {
+   color: var(--Soft-Pink);
+}
+.image {
+   height: 59px;
+   width: 59px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 1rem;
+}
+.image img {
+   max-width: 100%;
+}
+.card-body {
+   padding-top: 1rem;
+}
+
+.card-1 {
+   align-self: flex-start;
+}
+.card-2 {
+   align-self: center;
+}
+.card-3 {
+   align-self: flex-end;
+}
